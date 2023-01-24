@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "531367688019",
+    "project_id": "fema-bot-app",
+    "storage_bucket": "fema-bot-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531367688019:android:720235342e8b81515413a6",
+        "android_client_info": {
+          "package_name": "com.example.fema_botapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531367688019-c81179v6sdjqdjhkcb4m4qiesk7irc3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY0jZ_wcb2xrfKIyKHk-XgEDWVX97XQUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531367688019-c81179v6sdjqdjhkcb4m4qiesk7irc3p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

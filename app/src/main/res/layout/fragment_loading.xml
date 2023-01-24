@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/loading_frag_frame"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Loading">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:id="@+id/loading_frag"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/small_bot_logo"/>
+
+        <com.udevel.widgetlab.TypingIndicatorView
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:padding="10dp"
+            app:animateFrequency="800"
+            app:animationOrder="lastOneFirst"
+            app:backgroundColor="#eaeaea"
+            app:backgroundType="rounded"
+            app:dotAnimationDuration="2000"
+            app:dotAnimationType="BouncingSliding"
+            app:dotColor="#27715F"
+            app:dotCount="3"
+            app:dotHorizontalSpacing="4dp"
+            app:dotMaxCompressRatio="70%"
+            app:dotSecondColor="#6B394FBD"
+            app:dotSize="18dp"
+            app:showBackground="false" />
+
+    </LinearLayout>
+
+</FrameLayout>

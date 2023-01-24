@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/card_view"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Fragments.sign_up_fragment">
+
+
+    <EditText
+        android:id="@+id/new_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/abeezee"
+        android:hint="Email.."
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/new_user_first_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="14dp"
+                android:fontFamily="@font/abeezee"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text"
+                android:hint="Password.."
+                android:padding="10dp"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/new_user_comf_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="@font/abeezee"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text"
+                android:hint="Confim password.."
+                android:padding="10dp"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/terms_and_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abeezee"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="By sign up, you agree with polices"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/log_button"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SIGNUP"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sign_with_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/google_icon" />
+
+                <ImageView
+                    android:id="@+id/sign_with_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/facebook_icon" />
+
+                <ImageView
+                    android:id="@+id/sign_with_github"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/github_icon" />
+
+            </LinearLayout>
+
+
+</LinearLayout>

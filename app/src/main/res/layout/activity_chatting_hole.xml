@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Charts">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_life"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/setting_tab"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/all_messages"
+            android:layout_marginBottom="10dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/setting_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:src="@drawable/setting_icon" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/all_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chart_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_life"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/auto_texts"/>
+
+        <RelativeLayout
+            android:id="@+id/typing_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/box"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/typing_text_button"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/empty"
+                    android:drawableLeft="@drawable/choose_imoj"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/abeezee"
+                    android:hint="Text message.."
+                    android:maxWidth="18dp"
+                    android:padding="10dp"
+                    android:textSize="18dp" />
+
+
+                <ImageView
+
+                    android:id="@+id/mic_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="5dp"
+                   android:layout_gravity="center"
+                    android:src="@drawable/microphone"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/send_btn"
+                    android:layout_width="46dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="send"
+                    android:textColor="@color/primary_color"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

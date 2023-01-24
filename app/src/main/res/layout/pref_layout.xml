@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/sheet_shape"
+    android:layout_marginBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+    <View
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_shape"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/change_language"
+            android:drawablePadding="7dp"
+            android:text="change language"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/language_select"
+            android:drawableRight="@drawable/collaps"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/abeezee"
+            android:textColor="@color/text_color"
+            android:text="English"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/voice_text"
+            android:drawablePadding="7dp"
+            android:text="voice reply"
+            android:textSize="17dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/voice_switch"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/darck_theme"
+            android:drawablePadding="7dp"
+            android:text="dark theme"
+            android:textSize="17dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/dark_theme_switch"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/logout_btn"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_shape"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Logout"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
